@@ -6,31 +6,35 @@
   "packageManager": "pnpm@11.25.0",
   "scripts": {
     "dev": "vite --host 127.0.0.1",
-    "build": "tsc --noEmit && tsx scripts/build-index.ts && vite build",
+    "build": "tsc --noEmit && tsx scripts/prepare-ocr.ts && tsx scripts/build-index.ts && vite build",
     "test": "vitest run tests",
     "preview": "vite preview --host 127.0.0.1",
     "collect": "tsx scripts/collect.ts",
     "check:workflows": "tsx scripts/check-workflows.ts",
     "test:e2e": "playwright test",
-    "collect:all": "tsx scripts/collect-all.ts"
+    "collect:all": "tsx scripts/collect-all.ts",
+    "predev": "tsx scripts/prepare-ocr.ts"
   },
   "dependencies": {
+    "minisearch": "^7.1.2",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "minisearch": "^7.1.2",
+    "tesseract.js": "^7.0.0",
     "zod": "^3.24.2"
   },
   "devDependencies": {
+    "@playwright/test": "^1.51.1",
+    "@tesseract.js-data/fra": "^1.0.0",
+    "@types/node": "^22.15.0",
     "@types/react": "^19.1.0",
     "@types/react-dom": "^19.1.0",
-    "@types/node": "^22.15.0",
+    "cheerio": "^1.0.0",
+    "robots-parser": "^3.0.1",
+    "tesseract.js-core": "^6.1.2",
+    "tsx": "^4.19.4",
     "typescript": "^5.8.3",
     "vite": "^6.4.1",
     "vitest": "^3.2.4",
-    "tsx": "^4.19.4",
-    "cheerio": "^1.0.0",
-    "robots-parser": "^3.0.1",
-    "yaml": "^2.7.1",
-    "@playwright/test": "^1.51.1"
+    "yaml": "^2.7.1"
   }
 }

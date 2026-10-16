@@ -1,0 +1,12 @@
+import {createRequire} from 'node:module';
+import {dirname,join} from 'node:path';
+import {mkdir,copyFile,readdir} from 'node:fs/promises';
+const require=createRequire(import.meta.url);
+const tesseract=dirname(require.resolve('tesseract.js/package.json'));
+const core=dirname(createRequire(join(tesseract,'package.json')).resolve('tesseract.js-core/package.json'));
+const lang=dirname(require.resolve('@tesseract.js-data/fra/package.json'));
+for(const part of ['core','lang'])await mkdir(`public/ocr/${part}`,{recursive:true});
+await copyFile(join(tesseract,'dist/worker.min.js'),'public/ocr/worker.min.js');
+for(const file of await readdir(core))if(/\.wasm(?:\.js)?$/.test(file)||file==='LICENSE')await copyFile(join(core,file),join('public/ocr/core',file));
+await copyFile(join(lang,'4.0.0/fra.traineddata.gz'),'public/ocr/lang/fra.traineddata.gz');
+console.log('Local French OCR assets prepared.');

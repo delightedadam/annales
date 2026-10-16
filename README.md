@@ -1,17 +1,19 @@
-# Repère — Annales de Terminale
+# Repère — Terminale past-paper search
 
-Application React + TypeScript + Vite, entièrement statique. Le moteur MiniSearch utilise un index JSON compilé avant publication. Aucun serveur, compte, clé API ni service payant n’est nécessaire après déploiement.
+[Open the website](https://delightedadam.github.io/annales/)
 
-## Démarrer
+A static React, TypeScript and Vite app for French Terminale physics and chemistry. MiniSearch runs entirely in the browser against a prebuilt JSON index. No backend, account or API key is required. The website stays in French.
 
-Installer Node.js 24 et pnpm 11.25.0, puis ouvrir un terminal dans ce dossier :
+## Run locally
+
+Use Node.js 24 and pnpm 11.25.0:
 
 ```sh
 pnpm install --frozen-lockfile
 pnpm dev
 ```
 
-Ouvrir l’adresse affichée. Pour une vérification complète :
+Checks and production build:
 
 ```sh
 pnpm test
@@ -21,82 +23,50 @@ pnpm exec playwright install chromium
 pnpm test:e2e
 ```
 
-`pnpm build` valide les types, contrôle le catalogue avec Zod, prépare les JSON et compile `dist/`. Il ne contacte aucune source. Les deux JSON générés dans `public/` sont reconstruits depuis `data/catalogue.json`.
+The build validates types and catalogue data, prepares local OCR assets, generates the search index and builds `dist/`. It does not crawl the sources.
 
-## Mettre le site sur GitHub Pages
+## Photo search
 
-Le site est publié : **https://delightedadam.github.io/annales/**. Le dépôt est [delightedadam/annales](https://github.com/delightedadam/annales). Publication et recherche vérifiées le 16 octobre 2026. Les instructions suivantes permettent de reproduire la configuration.
+Import an image or choose **Prendre une photo** on a phone. Supported mobile browsers offer the rear camera; others may show a file picker. French OCR runs locally using Tesseract.js. The worker, WebAssembly engine and language model are hosted with the site and downloaded when needed. Images and recognized text are not uploaded to an analysis service.
 
-1. Se connecter à [github.com/delightedadam](https://github.com/delightedadam), puis cliquer **+ → New repository**.
-2. Nommer le dépôt **annales**, choisir **Public**, ne pas ajouter de README ou de `.gitignore`, puis **Create repository**.
-3. Dans le terminal ouvert dans ce dossier :
+Review the editable text and proposed concepts, then search for similar papers. Suggestions use explicit phrases and scientific clues; results are ranked by shared catalogue concepts in OR mode. Switch to AND to require every concept. This is not mathematical reasoning or visual diagram interpretation. Handwriting, formulas, blurred images and rotated pages may be misread. Paste text as a fallback. JPG, PNG, WebP and BMP are accepted, up to 20 MB; export HEIC as JPG first. Photo text is not put into shared URLs.
 
-   ```sh
-   git add .
-   git commit -m "Create static annales search MVP"
-   git remote add origin https://github.com/delightedadam/annales.git
-   git push -u origin main
-   ```
+## GitHub Pages
 
-   GitHub peut demander une connexion. Ne mettre aucun mot de passe ou jeton dans le code.
+The repository is [delightedadam/annales](https://github.com/delightedadam/annales). In **Settings → Pages → Build and deployment → Source**, select **GitHub Actions**. Push changes to `main`; the deployment workflow runs checks, tests, the production build and browser tests before publishing. It then checks the public page and catalogue. Pull requests only run checks.
 
-4. Dans le dépôt GitHub, ouvrir **Settings → Pages → Build and deployment → Source**, puis choisir **GitHub Actions**.
-5. Ouvrir **Actions → Test and deploy GitHub Pages**. Si le premier lancement a échoué avant l’activation de Pages, cliquer **Re-run all jobs** ou **Run workflow**.
-6. Attendre la réussite des étapes de tests, compilation, publication et contrôle de l’URL. L’adresse est `https://delightedadam.github.io/annales/`.
-7. Ouvrir le lien fourni par le workflow, rechercher « Doppler », tester un corrigé, puis recharger l’URL d’une recherche partagée.
+The Vite base path is derived from `GITHUB_REPOSITORY`; this project uses `/annales/`. User sites named `*.github.io` use `/`. For a custom domain, set `PAGES_BASE=/` during the build and add `public/CNAME`. Navigation uses query parameters, so no server rewrites are needed. Keep credentials out of the repository and public files.
 
-Chaque push sur `main` relance les tests et publie si tout réussit. Les pull requests sont testées mais ne sont pas déployées. Le workflow vérifie aussi l’URL publique et le chargement de son catalogue après publication.
+## Catalogue and search
 
-Le nom du dépôt est lu automatiquement depuis `GITHUB_REPOSITORY` pour le `base` Vite. Les dépôts `*.github.io` utilisent `/`. Pour un domaine personnalisé, définir `PAGES_BASE=/` dans l’environnement du build et ajouter un fichier `public/CNAME`. La navigation utilise les paramètres de l’URL, sans routes nécessitant une réécriture serveur.
+The October 16, 2026 crawl retained **1,079 references**, grouped into **918 results**: 691 exercise or collection entries and 227 complete papers. It examined 26 Labolycée listing pages and 32 Vecteur Bac navigation pages, including all 449 entries announced by the Labolycée curriculum filter. Eleven out-of-scope entries were excluded, with no remaining collection errors. Uncertain duplicates remain separate; 918 does not mean 918 proven distinct papers.
 
-Référence : [guide officiel Vite pour GitHub Pages](https://vite.dev/guide/static-deploy.html#github-pages).
+Search uses titles, source-provided concepts and a curated synonym dictionary. AND requires every concept and remaining word; OR requires at least one. Source filters also restrict the evidence used. Unknown metadata stays `null`. Concept provenance and verification status are available in each result.
 
-## Catalogue et recherche
+No source PDFs or full PDF text are hosted or indexed. The 1,023 PDF links come from source pages; only the initial selection received separate HEAD checks. Another 56 entries link to their source page instead. No production PDF has embedding permission enabled. Coverage includes discovered public catalogues, not guaranteed orphan pages or future additions.
 
-Le catalogue compte **1 079 références réelles, regroupées en 918 résultats** : 691 fiches d’exercices ou recueils et 227 sujets complets. Les 26 pages de catalogues Labolycée et les 32 pages de navigation Vecteur Bac repérées ont été parcourues sans plafond de sélection. Les 449 fiches annoncées dans le filtre Terminale Labolycée ont toutes été examinées, ainsi que les sujets complets associés et ceux publiés séparément. Au total, 11 fiches hors cursus ont été exclues et aucune erreur de collecte ne reste. Les doublons non confirmés restent séparés : ce nombre ne garantit pas 918 énoncés tous distincts. La couverture est décrite dans `data/coverage.json` et affichée dans le site.
+## Update the catalogue
 
-Les données comprennent la provenance de chaque notion, les liens sujet/corrigé, la date et le statut de vérification, le contexte d’épreuve, les relations exercice/sujet et la politique de lecteur. Les champs inconnus restent `null`. Les deux titres de source sont conservés même lorsqu’un doublon est regroupé.
-
-Les expressions scientifiques connues sont reconnues en priorité grâce à un dictionnaire explicite. Le mode ET exige toutes les notions et tous les termes restants ; le mode OU en exige au moins un. Les notions sélectionnées sont strictes. Les fautes sont tolérées dans la recherche textuelle et signalées comme correspondances à vérifier. Aucune notion ne provient d’une supposition fondée sur un titre ou d’un modèle d’IA.
-
-Le filtre source limite aussi les preuves utilisées. Par exemple, le titrage pH-métrique de « La lessive de cendre » est attesté par Labolycée ; la fiche Vecteur Bac ne précise que « Titrage ». Le filtre Vecteur Bac seul ne lui attribue donc pas cette sous-notion.
-
-## Actualiser
-
-Lire [l’audit](docs/AUDIT.md) et revoir les règles des sources avant chaque extension. La découverte suit toutes les pages du cursus Labolycée, les sujets complets par année et les menus géographique et thématique Vecteur Bac. Elle reste limitée aux deux sources autorisées.
+Review [source access notes](docs/AUDIT.md) before collecting:
 
 ```sh
 pnpm collect:all --audit
-# Une seule page de la liste :
 pnpm collect --audit --only https://www.labolycee.org/exercices/la-lessive-de-cendre
 pnpm test
 pnpm build
 ```
 
-Le collecteur vérifie robots.txt, attend au moins 1,6 seconde entre requêtes, refuse les redirections et hôtes inattendus, ne contacte pas d’API, ne télécharge aucun PDF et vérifie les liens par HEAD. Il utilise les ETag lorsqu’ils existent, conserve les données précédentes en cas d’erreur, marque les pages disparues et écrit atomiquement le catalogue. Une erreur structurelle fait échouer la commande plutôt que d’inventer des données. Le rapport de la dernière collecte est dans `data/collection-report.json` ; le cache local n’est pas publié.
+Full discovery follows the two sources only, respects robots.txt, spaces requests by at least 1.6 seconds per origin and uses a 24-hour local HTML cache. It does not download PDFs. Discovery lists and coverage are saved in `data/discovered-*.json` and `data/coverage.json`. The single-page collector additionally checks document links; its report is `data/collection-report.json`. Local caches are not published.
 
-Pour la collecte mensuelle, documenter une autorisation explicite par source dans `data/permissions.json` (`periodic: true`, `evidenceUrl`), puis définir **Settings → Secrets and variables → Actions → Variables → COLLECTION_ENABLED = true**. Les deux verrous sont nécessaires. La configuration livrée désactive cette collecte.
+Monthly collection is disabled. To enable it, record permission for each source in `data/permissions.json` (`periodic: true` and `evidenceUrl`) and set the repository Actions variable `COLLECTION_ENABLED=true`. Both gates are required. The separate workflow produces a candidate catalogue for review, without automatically changing the live catalogue.
 
-Le workflow séparé relance la découverte complète lorsque les autorisations sont documentées, puis produit un **catalogue-candidate** téléchargeable depuis Actions, à examiner avant de remplacer `data/catalogue.json` et de pousser. Cette étape de revue évite qu’une modification de structure des sources publie automatiquement des notions incorrectes. Les listes découvertes sont enregistrées dans `data/discovered-*.json`. Un cache HTML local de 24 heures permet de reprendre sans redemander les pages déjà lues. `pnpm collect --audit --only URL` reste disponible pour contrôler une fiche de la liste initiale.
+## Main files
 
-## Architecture
+- `src/search.ts`: local search, filters, ranking, pagination and the `SearchProvider` interface for a future backend.
+- `src/notions.ts`: scientific vocabulary and synonyms.
+- `src/PhotoSearch.tsx`, `src/photo-notions.ts`: local OCR and reviewable concept suggestions.
+- `scripts/connectors.ts`, `scripts/discover.ts`, `scripts/collect-all.ts`: source parsing and collection.
+- `scripts/build-index.ts`, `scripts/prepare-ocr.ts`: static build assets.
+- `.github/workflows/`: deployment and separately gated collection.
 
-- `src/model.ts` : modèle validé et liste d’hôtes HTTPS autorisés.
-- `scripts/connectors.ts` : parseurs indépendants Labolycée et Vecteur Bac.
-- `scripts/collect.ts` : collecte hors ligne, cache, erreurs et liens.
-- `src/notions.ts` : vocabulaire scientifique et synonymes.
-- `src/search.ts` : contrat `SearchProvider`, moteur local, filtres, tri, pagination et URL.
-- `scripts/build-index.ts` : index MiniSearch précompilé.
-- `src/main.tsx` : interface accessible, clair/sombre, provenance et lecteur conditionnel.
-- `.github/workflows/` : tests/publication et actualisation séparée.
-
-Pour ajouter un backend, implémenter `SearchProvider.search(Query)` avec un appel HTTP et connecter son résultat à l’interface ; les collecteurs et le modèle restent indépendants. La V1 emploie le chemin synchrone local, avec un dictionnaire précompilé pour conserver des recherches rapides sur le catalogue complet.
-
-## Limites actuelles
-
-- Couverture des catalogues publics repérés à la date de collecte, sans garantie sur des pages orphelines non référencées ou des publications ultérieures. Les compilations anciennes sont conservées lorsqu’elles sont classées par la source dans le cursus actuel ; leur année reste inconnue si la source ne la précise pas.
-- Aucun texte intégral de PDF indexé ou republié.
-- Aucun sujet n’a d’autorisation d’intégration établie : seuls les liens externes sont proposés. Le lecteur conditionnel est prêt, mais sa compatibilité avec un PDF distant autorisé devra être vérifiée avant activation. Les contrôles de page/zoom reposent sur le lecteur PDF du navigateur ; le lien externe reste disponible.
-- Les 1 079 pages de métadonnées ont été consultées. Les 1 023 liens PDF sont repris des sources, sans téléchargement ; seuls les liens de la sélection initiale ont reçu un contrôle HEAD séparé. Le statut non retesté est indiqué. 56 fiches sans PDF direct proposent une action distincte « Consulter la fiche ».
-- La déduplication des exercices exige titre, année, centre, session et numéro concordants. Celle des sujets complets exige référence officielle, année, centre et session concordants. Les cas incertains restent séparés.
-- La publication GitHub Pages a été exécutée avec succès. Voir [les validations](docs/VALIDATION.md) pour les preuves et limites.
+See [validation notes](docs/VALIDATION.md) for checks and limitations.
