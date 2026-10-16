@@ -1,0 +1,33 @@
+name: Propose authorized catalogue updates
+on:
+  schedule:
+    - cron: '23 5 1 * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  collect:
+    if: vars.COLLECTION_ENABLED == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 11.25.0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm collect:all --periodic
+      - run: pnpm test && pnpm build
+      - name: Save reviewed metadata candidate
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: catalogue-candidate
+          path: |
+            data/catalogue.json
+            data/collection-report.json
+            data/coverage.json
+            data/discovered-*.json
+          retention-days: 30

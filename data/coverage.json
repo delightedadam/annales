@@ -1,0 +1,139 @@
+{
+  "startedAt": "2026-10-16T17:12:23.975Z",
+  "finishedAt": "2026-10-16T17:12:31.444Z",
+  "sources": {
+    "Labolycée": {
+      "candidates": 592,
+      "listingPages": [
+        "https://www.labolycee.org/exercices?cursus=Tale+Sp%C3%A9cialit%C3%A9+Physique+Chimie",
+        "https://www.labolycee.org/exercices?cursus=Tale+Sp%C3%A9cialit%C3%A9+Physique+Chimie&page=2",
+        "https://www.labolycee.org/exercices?cursus=Tale+Sp%C3%A9cialit%C3%A9+Physique+Chimie&page=19",
+        "https://www.labolycee.org/exercices?cursus=Tale+Sp%C3%A9cialit%C3%A9+Physique+Chimie&page=3",
+        "https://www.labolycee.org/exercices?cursus=Tale+Sp%C3%A9cialit%C3%A9+Physique+Chimie&page=18",
+        "https://www.labolycee.org/exercices?cursus=Tale+Sp%C3%A9cialit%C3%A9+Physique+Chimie&page=4",
+        "https://www.labolycee.org/exercices?cursus=Tale+Sp%C3%A9cialit%C3%A9+Physique+Chimie&page=17",
+        "https://www.labolycee.org/exercices?cursus=Tale+Sp%C3%A9cialit%C3%A9+Physique+Chimie&page=5",
+        "https://www.labolycee.org/exercices?cursus=Tale+Sp%C3%A9cialit%C3%A9+Physique+Chimie&page=16",
+        "https://www.labolycee.org/exercices?cursus=Tale+Sp%C3%A9cialit%C3%A9+Physique+Chimie&page=6",
+        "https://www.labolycee.org/exercices?cursus=Tale+Sp%C3%A9cialit%C3%A9+Physique+Chimie&page=15",
+        "https://www.labolycee.org/exercices?cursus=Tale+Sp%C3%A9cialit%C3%A9+Physique+Chimie&page=7",
+        "https://www.labolycee.org/exercices?cursus=Tale+Sp%C3%A9cialit%C3%A9+Physique+Chimie&page=14",
+        "https://www.labolycee.org/exercices?cursus=Tale+Sp%C3%A9cialit%C3%A9+Physique+Chimie&page=8",
+        "https://www.labolycee.org/exercices?cursus=Tale+Sp%C3%A9cialit%C3%A9+Physique+Chimie&page=13",
+        "https://www.labolycee.org/exercices?cursus=Tale+Sp%C3%A9cialit%C3%A9+Physique+Chimie&page=9",
+        "https://www.labolycee.org/exercices?cursus=Tale+Sp%C3%A9cialit%C3%A9+Physique+Chimie&page=12",
+        "https://www.labolycee.org/exercices?cursus=Tale+Sp%C3%A9cialit%C3%A9+Physique+Chimie&page=10",
+        "https://www.labolycee.org/exercices?cursus=Tale+Sp%C3%A9cialit%C3%A9+Physique+Chimie&page=11",
+        "https://www.labolycee.org/sujets",
+        "https://www.labolycee.org/sujets?annee=2026",
+        "https://www.labolycee.org/sujets?annee=2025",
+        "https://www.labolycee.org/sujets?annee=2024",
+        "https://www.labolycee.org/sujets?annee=2023",
+        "https://www.labolycee.org/sujets?annee=2022",
+        "https://www.labolycee.org/sujets?annee=2021"
+      ],
+      "expectedExercises": 449,
+      "errors": [],
+      "indexed": 581
+    },
+    "Vecteur Bac": {
+      "candidates": 498,
+      "listingPages": [
+        "https://www.vecteurbac.fr/terminale-specialite-physique-chimie-menu-geographique/",
+        "https://www.vecteurbac.fr/terminale-specialite-physique-chimie-menu-thematique/",
+        "https://www.vecteurbac.fr/terminale-specialite-chimie-acide-base/",
+        "https://www.vecteurbac.fr/terminale-specialite-chimie-beer-lambert/",
+        "https://www.vecteurbac.fr/terminale-specialite-chimie-cinetique/",
+        "https://www.vecteurbac.fr/terminale-specialite-chimie-electrolyse/",
+        "https://www.vecteurbac.fr/terminale-specialite-chimie-kohlrausch/",
+        "https://www.vecteurbac.fr/terminale-specialite-chimie-mecanisme-reactionnel/",
+        "https://www.vecteurbac.fr/terminale-specialite-chimie-piles/",
+        "https://www.vecteurbac.fr/terminale-specialite-chimie-python/",
+        "https://www.vecteurbac.fr/terminale-specialite-chimie-quotient-de-reaction/",
+        "https://www.vecteurbac.fr/terminale-specialite-chimie-spectroscopie/",
+        "https://www.vecteurbac.fr/terminale-specialite-chimie-strategie-de-synthese/",
+        "https://www.vecteurbac.fr/terminale-specialite-chimie-synthese-organique/",
+        "https://www.vecteurbac.fr/terminale-specialite-chimie-titrage/",
+        "https://www.vecteurbac.fr/terminale-specialite-chimie-titrage-conductimetrique/",
+        "https://www.vecteurbac.fr/terminale-specialite-chimie-titrage-ph-metrique/",
+        "https://www.vecteurbac.fr/terminale-specialite-physique-circuits-rc/",
+        "https://www.vecteurbac.fr/terminale-specialite-physique-diffraction/",
+        "https://www.vecteurbac.fr/terminale-specialite-physique-doppler/",
+        "https://www.vecteurbac.fr/terminale-specialite-physique-effet-photoelectrique/",
+        "https://www.vecteurbac.fr/terminale-specialite-physique-fluides/",
+        "https://www.vecteurbac.fr/terminale-specialite-physique-intensite-sonore/",
+        "https://www.vecteurbac.fr/terminale-specialite-physique-interferences/",
+        "https://www.vecteurbac.fr/terminale-specialite-physique-lunette-astronomique/",
+        "https://www.vecteurbac.fr/terminale-specialite-physique-champ-de-pesanteur/",
+        "https://www.vecteurbac.fr/terminale-specialite-physique-champ-electrique/",
+        "https://www.vecteurbac.fr/terminale-specialite-physique-nucleaire/",
+        "https://www.vecteurbac.fr/terminale-specialite-physique-ondes/",
+        "https://www.vecteurbac.fr/terminale-specialite-physique-python/",
+        "https://www.vecteurbac.fr/terminale-specialite-physique-satellites-lois-de-kepler/",
+        "https://www.vecteurbac.fr/terminale-specialite-physique-thermodynamique/"
+      ],
+      "errors": [],
+      "indexed": 498
+    }
+  },
+  "errors": [],
+  "excluded": [
+    {
+      "url": "https://www.labolycee.org/exercices/jeu-du-hornuss",
+      "discoveredOn": "https://www.labolycee.org/exercices?cursus=Tale+Sp%C3%A9cialit%C3%A9+Physique+Chimie&page=2",
+      "message": "Error: Hors périmètre : Terminale Spécialité Sciences de l'ingénieur · Métropole 2026 · Session de remplacement · Exercice n° 1"
+    },
+    {
+      "url": "https://www.labolycee.org/exercices/des-nuisances-sonores-autour-des-festivals",
+      "discoveredOn": "https://www.labolycee.org/exercices?cursus=Tale+Sp%C3%A9cialit%C3%A9+Physique+Chimie&page=2",
+      "message": "Error: Hors périmètre : Terminale Spécialité Sciences de l'ingénieur · Métropole 2026 · Session de remplacement · Exercice n° 2"
+    },
+    {
+      "url": "https://www.labolycee.org/exercices/vol-zero-g-2",
+      "discoveredOn": "https://www.labolycee.org/exercices?cursus=Tale+Sp%C3%A9cialit%C3%A9+Physique+Chimie&page=3",
+      "message": "Error: Hors périmètre : Terminale Spécialité Sciences de l'ingénieur · Polynésie 2026 · Jour 1 · Exercice n° 1 · Corrigé : Jocelyn CLEMENT"
+    },
+    {
+      "url": "https://www.labolycee.org/exercices/mesure-du-diametre-d-un-fil-de-peche",
+      "discoveredOn": "https://www.labolycee.org/exercices?cursus=Tale+Sp%C3%A9cialit%C3%A9+Physique+Chimie&page=3",
+      "message": "Error: Hors périmètre : Terminale Spécialité Sciences de l'ingénieur · Polynésie 2026 · Jour 1 · Exercice n° 2"
+    },
+    {
+      "url": "https://www.labolycee.org/exercices/des-panneaux-photovoltaiques-pour-resister-a-la-grele",
+      "discoveredOn": "https://www.labolycee.org/exercices?cursus=Tale+Sp%C3%A9cialit%C3%A9+Physique+Chimie&page=15",
+      "message": "Error: Hors périmètre : Terminale Spécialité Sciences de l'ingénieur · Polynésie 2022 · Jour 1 · Exercice n° 3"
+    },
+    {
+      "url": "https://www.labolycee.org/sujets/2026-antilles-guyane-bac-2026-antilles-jour-2-sciences-de-l-ingenieur",
+      "discoveredOn": "https://www.labolycee.org/exercices/un-camping-confortable",
+      "message": "Error: Hors périmètre : autre épreuve"
+    },
+    {
+      "url": "https://www.labolycee.org/sujets/2026-antilles-guyane-bac-2026-antilles-jour-1-sciences-de-l-ingenieur",
+      "discoveredOn": "https://www.labolycee.org/exercices/neptune-et-triton",
+      "message": "Error: Hors périmètre : autre épreuve"
+    },
+    {
+      "url": "https://www.labolycee.org/sujets/2026-afrique-bac-2026-centres-etrangers-1-jour-2-sciences-de-l-ingenieur",
+      "discoveredOn": "https://www.labolycee.org/exercices/une-histoire-de-briques",
+      "message": "Error: Hors périmètre : autre épreuve"
+    },
+    {
+      "url": "https://www.labolycee.org/sujets/2026-afrique-bac-2026-centres-etrangers-1-jour-1-sciences-de-l-ingenieur",
+      "discoveredOn": "https://www.labolycee.org/exercices/etude-de-l-effet-doppler-a-l-aide-de-deux-telephones",
+      "message": "Error: Hors périmètre : autre épreuve"
+    },
+    {
+      "url": "https://www.labolycee.org/sujets/2026-metropole-bac-2026-metropole-jour-2-sciences-de-l-ingenieur",
+      "discoveredOn": "https://www.labolycee.org/exercices/niveau-sonore-dans-une-salle-de-classe",
+      "message": "Error: Hors périmètre : autre épreuve"
+    },
+    {
+      "url": "https://www.labolycee.org/sujets/2026-metropole-bac-2026-metropole-jour-1-sciences-de-l-ingenieur",
+      "discoveredOn": "https://www.labolycee.org/exercices/mouvement-sur-un-plan-incline",
+      "message": "Error: Hors périmètre : autre épreuve"
+    }
+  ],
+  "processed": 1090,
+  "references": 1079
+}

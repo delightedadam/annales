@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.audit/
+.cache/
+test-results/
+playwright-report/
+.env*

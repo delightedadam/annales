@@ -1,0 +1,687 @@
+{
+  "version": 1,
+  "generatedAt": "2026-10-16T12:11:32.990Z",
+  "resources": [
+    {
+      "id": "e3fa98f3994501d8",
+      "source": "Vecteur Bac",
+      "pageUrl": "https://www.vecteurbac.fr/radar-pedagogique-equipe-dun-panneau-solaire/",
+      "title": "Radar pédagogique équipé d’un panneau solaire (sujet et corrigé)",
+      "kind": "exercise",
+      "level": "Terminale",
+      "subject": "Physique-chimie",
+      "year": 2025,
+      "session": "Jour 1",
+      "center": "Centres étrangers",
+      "exerciseNumber": 2,
+      "notions": [
+        {
+          "label": "Effet photoélectrique",
+          "evidenceUrl": "https://www.vecteurbac.fr/radar-pedagogique-equipe-dun-panneau-solaire/",
+          "evidence": "Effet photoélectrique"
+        },
+        {
+          "label": "Effet Doppler",
+          "evidenceUrl": "https://www.vecteurbac.fr/radar-pedagogique-equipe-dun-panneau-solaire/",
+          "evidence": "Doppler"
+        },
+        {
+          "label": "Ondes",
+          "evidenceUrl": "https://www.vecteurbac.fr/radar-pedagogique-equipe-dun-panneau-solaire/",
+          "evidence": "Ondes"
+        }
+      ],
+      "subjectUrl": "https://www.vecteurbac.fr/wp-content/uploads/2025/06/Radar-pedagogique-equipe-dun-panneau-solaire.pdf",
+      "correctionUrl": "https://www.vecteurbac.fr/wp-content/uploads/2025/06/Correction-Radar-pedagogique-equipe-dun-panneau-solaire.pdf",
+      "parentUrl": "https://www.vecteurbac.fr/terminale-specialite-physique-chimie-2025-centres-etrangers-sujet-1/",
+      "childUrls": [],
+      "embed": {
+        "allowed": false,
+        "permissionUrl": null,
+        "reason": "Autorisation d’intégration du sujet non établie ; accès sur le site source."
+      },
+      "indexedAt": "2026-10-16T12:05:17.329Z",
+      "verifiedAt": "2026-10-16T12:05:17.329Z",
+      "contentHash": "cb7e0c1ec34260b28240ba584751258ace4d6f818b852b1064ea96601a1fd534",
+      "links": {
+        "page": "ok",
+        "subject": "ok",
+        "correction": "ok"
+      }
+    },
+    {
+      "id": "eddec3d89ab92722",
+      "source": "Labolycée",
+      "pageUrl": "https://www.labolycee.org/exercices/securite-incendie",
+      "title": "Sécurité incendie",
+      "kind": "exercise",
+      "level": "Terminale",
+      "subject": "Physique-chimie",
+      "year": 2026,
+      "session": "Jour 2",
+      "center": "Antilles-Guyane",
+      "exerciseNumber": 1,
+      "notions": [
+        {
+          "label": "Fluide",
+          "evidenceUrl": "https://www.labolycee.org/exercices/securite-incendie",
+          "evidence": "Fluide"
+        },
+        {
+          "label": "Intensité sonore",
+          "evidenceUrl": "https://www.labolycee.org/exercices/securite-incendie",
+          "evidence": "Intensité sonore"
+        },
+        {
+          "label": "Mouvement dans un champ de pesanteur uniforme",
+          "evidenceUrl": "https://www.labolycee.org/exercices/securite-incendie",
+          "evidence": "Mouvement dans un champ de pesanteur uniforme"
+        },
+        {
+          "label": "Thermodynamique",
+          "evidenceUrl": "https://www.labolycee.org/exercices/securite-incendie",
+          "evidence": "Thermodynamique"
+        },
+        {
+          "label": "Équations différentielles",
+          "evidenceUrl": "https://www.labolycee.org/exercices/securite-incendie",
+          "evidence": "équation différentielle"
+        },
+        {
+          "label": "Deuxième loi de Newton",
+          "evidenceUrl": "https://www.labolycee.org/exercices/securite-incendie",
+          "evidence": "2e loi de Newton"
+        }
+      ],
+      "subjectUrl": "https://www.labolycee.org/fichiers/2026-antilles-j2-exo1-sujet-securiteincendie-11pts-667b30.pdf",
+      "correctionUrl": null,
+      "parentUrl": "https://www.labolycee.org/sujets/2026-antilles-guyane-bac-2026-antilles-jour-2",
+      "childUrls": [],
+      "embed": {
+        "allowed": false,
+        "permissionUrl": null,
+        "reason": "Autorisation d’intégration du sujet non établie ; accès sur le site source."
+      },
+      "indexedAt": "2026-10-16T12:05:25.147Z",
+      "verifiedAt": "2026-10-16T12:05:25.147Z",
+      "contentHash": "23e147d7b8c4a48003571d493153287bd7ecdb0e417e18fac4e67f0d89e4a3c6",
+      "links": {
+        "page": "ok",
+        "subject": "ok",
+        "correction": "absent"
+      }
+    },
+    {
+      "id": "2f58efe0d4e91698",
+      "source": "Labolycée",
+      "pageUrl": "https://www.labolycee.org/exercices/la-lessive-de-cendre",
+      "title": "La lessive de cendre",
+      "kind": "exercise",
+      "level": "Terminale",
+      "subject": "Physique-chimie",
+      "year": 2026,
+      "session": "Jour 2",
+      "center": "Amérique du Nord",
+      "exerciseNumber": 3,
+      "notions": [
+        {
+          "label": "Acide-base",
+          "evidenceUrl": "https://www.labolycee.org/exercices/la-lessive-de-cendre",
+          "evidence": "Acide-Base"
+        },
+        {
+          "label": "Titrage pH-métrique",
+          "evidenceUrl": "https://www.labolycee.org/exercices/la-lessive-de-cendre",
+          "evidence": "Titrage pH-métrique"
+        },
+        {
+          "label": "Titrage",
+          "evidenceUrl": "https://www.labolycee.org/exercices/la-lessive-de-cendre",
+          "evidence": "Titrage"
+        }
+      ],
+      "subjectUrl": "https://www.labolycee.org/fichiers/2026-amnord-j2-exo3-sujet-lessivecendre-4pts-67c448.pdf",
+      "correctionUrl": "https://www.labolycee.org/fichiers/2026-05/2026-AmNord-J2-Exo3-Correction-LessiveCendre-4pts.pdf",
+      "parentUrl": "https://www.labolycee.org/sujets/2026-amerique-du-nord-bac-2026-amerique-du-nord-jour-2",
+      "childUrls": [],
+      "embed": {
+        "allowed": false,
+        "permissionUrl": null,
+        "reason": "Autorisation d’intégration du sujet non établie ; accès sur le site source."
+      },
+      "indexedAt": "2026-10-16T12:05:28.554Z",
+      "verifiedAt": "2026-10-16T12:05:28.554Z",
+      "contentHash": "d828533400f1442f007afefbbda2d9b93f4e1f7df8c149aa7045cc0884c64e04",
+      "links": {
+        "page": "ok",
+        "subject": "ok",
+        "correction": "ok"
+      }
+    },
+    {
+      "id": "7359eb9cbea94675",
+      "source": "Labolycée",
+      "pageUrl": "https://www.labolycee.org/exercices/valorisation-du-dioxyde-de-carbone-dans-les-cimenteries",
+      "title": "Valorisation du dioxyde de carbone dans les cimenteries",
+      "kind": "exercise",
+      "level": "Terminale",
+      "subject": "Physique-chimie",
+      "year": 2026,
+      "session": "Jour 1",
+      "center": "Amérique du Nord",
+      "exerciseNumber": 1,
+      "notions": [
+        {
+          "label": "Acide-base",
+          "evidenceUrl": "https://www.labolycee.org/exercices/valorisation-du-dioxyde-de-carbone-dans-les-cimenteries",
+          "evidence": "Acide-Base"
+        },
+        {
+          "label": "Titrage pH-métrique",
+          "evidenceUrl": "https://www.labolycee.org/exercices/valorisation-du-dioxyde-de-carbone-dans-les-cimenteries",
+          "evidence": "Titrage pH-métrique"
+        },
+        {
+          "label": "Acide-base",
+          "evidenceUrl": "https://www.labolycee.org/exercices/valorisation-du-dioxyde-de-carbone-dans-les-cimenteries",
+          "evidence": "Acide-base"
+        },
+        {
+          "label": "Titrage",
+          "evidenceUrl": "https://www.labolycee.org/exercices/valorisation-du-dioxyde-de-carbone-dans-les-cimenteries",
+          "evidence": "Titrage"
+        },
+        {
+          "label": "Mécanisme réactionnel",
+          "evidenceUrl": "https://www.labolycee.org/exercices/valorisation-du-dioxyde-de-carbone-dans-les-cimenteries",
+          "evidence": "mécanismes réactionnels"
+        }
+      ],
+      "subjectUrl": "https://www.labolycee.org/fichiers/2026-amnord-j1-exo1-sujet-valorisationco2-9pts-744a07.pdf",
+      "correctionUrl": "https://www.labolycee.org/fichiers/2026-amnord-j1-exo1-correction-valorisationco2-9pts-cc9c1b.pdf",
+      "parentUrl": "https://www.labolycee.org/sujets/2026-amerique-du-nord-bac-2026-amerique-du-nord-j1",
+      "childUrls": [],
+      "embed": {
+        "allowed": false,
+        "permissionUrl": null,
+        "reason": "Autorisation d’intégration du sujet non établie ; accès sur le site source."
+      },
+      "indexedAt": "2026-10-16T12:05:33.681Z",
+      "verifiedAt": "2026-10-16T12:05:33.681Z",
+      "contentHash": "ee5e01607fa86cf10ca45d026b4ff2c781c4b64e990d1e335fd18a96867d6753",
+      "links": {
+        "page": "ok",
+        "subject": "ok",
+        "correction": "ok"
+      }
+    },
+    {
+      "id": "90ef94a2a4fe5c33",
+      "source": "Vecteur Bac",
+      "pageUrl": "https://www.vecteurbac.fr/la-lessive-de-cendre/",
+      "title": "La lessive de cendre (sujet et corrigé)",
+      "kind": "exercise",
+      "level": "Terminale",
+      "subject": "Physique-chimie",
+      "year": 2026,
+      "session": "Jour 2",
+      "center": "Amérique du nord",
+      "exerciseNumber": 3,
+      "notions": [
+        {
+          "label": "Acide-base",
+          "evidenceUrl": "https://www.vecteurbac.fr/la-lessive-de-cendre/",
+          "evidence": "Acide-Base"
+        },
+        {
+          "label": "Titrage",
+          "evidenceUrl": "https://www.vecteurbac.fr/la-lessive-de-cendre/",
+          "evidence": "Titrage"
+        }
+      ],
+      "subjectUrl": "https://www.vecteurbac.fr/wp-content/uploads/2026/05/La-lessive-de-cendre.pdf",
+      "correctionUrl": "https://www.vecteurbac.fr/wp-content/uploads/2026/06/Correction-La-lessive-de-cendre.pdf",
+      "parentUrl": "https://www.vecteurbac.fr/terminale-specialite-physique-chimie-2026-amerique-du-nord-sujet-2/",
+      "childUrls": [],
+      "embed": {
+        "allowed": false,
+        "permissionUrl": null,
+        "reason": "Autorisation d’intégration du sujet non établie ; accès sur le site source."
+      },
+      "indexedAt": "2026-10-16T12:05:41.360Z",
+      "verifiedAt": "2026-10-16T12:05:41.360Z",
+      "contentHash": "8dd9a17a7f9bad8487e7877056a84fc328bc478f7e48a25b0d0fe6ba15a8f29f",
+      "links": {
+        "page": "ok",
+        "subject": "ok",
+        "correction": "ok"
+      }
+    },
+    {
+      "id": "fbfc90981cd27227",
+      "source": "Vecteur Bac",
+      "pageUrl": "https://www.vecteurbac.fr/valorisation-du-dioxyde-de-carbone-dans-les-cimenteries/",
+      "title": "Valorisation du dioxyde de carbone dans les cimenteries (sujet et corrigé)",
+      "kind": "exercise",
+      "level": "Terminale",
+      "subject": "Physique-chimie",
+      "year": 2026,
+      "session": "Jour 1",
+      "center": "Amérique du nord",
+      "exerciseNumber": 1,
+      "notions": [
+        {
+          "label": "Acide-base",
+          "evidenceUrl": "https://www.vecteurbac.fr/valorisation-du-dioxyde-de-carbone-dans-les-cimenteries/",
+          "evidence": "Acide-Base"
+        },
+        {
+          "label": "Mécanisme réactionnel",
+          "evidenceUrl": "https://www.vecteurbac.fr/valorisation-du-dioxyde-de-carbone-dans-les-cimenteries/",
+          "evidence": "Mécanisme réactionnel"
+        },
+        {
+          "label": "Titrage pH-métrique",
+          "evidenceUrl": "https://www.vecteurbac.fr/valorisation-du-dioxyde-de-carbone-dans-les-cimenteries/",
+          "evidence": "Titrage pH-métrique"
+        }
+      ],
+      "subjectUrl": "https://www.vecteurbac.fr/wp-content/uploads/2026/05/Valorisation-du-dioxyde-de-carbone-dans-les-cimenteries.pdf",
+      "correctionUrl": "https://www.vecteurbac.fr/wp-content/uploads/2026/06/Correction-Valorisation-du-dioxyde-de-carbone-dans-les-cimenteries.pdf",
+      "parentUrl": "https://www.vecteurbac.fr/terminale-specialite-physique-chimie-2026-amerique-du-nord-sujet-1",
+      "childUrls": [],
+      "embed": {
+        "allowed": false,
+        "permissionUrl": null,
+        "reason": "Autorisation d’intégration du sujet non établie ; accès sur le site source."
+      },
+      "indexedAt": "2026-10-16T12:05:46.974Z",
+      "verifiedAt": "2026-10-16T12:05:46.974Z",
+      "contentHash": "086be2878aea7ad094f690dd9c15de7810d35b12e949150d801a21f5035b4aa8",
+      "links": {
+        "page": "ok",
+        "subject": "ok",
+        "correction": "ok"
+      }
+    },
+    {
+      "id": "9435799c958039c1",
+      "source": "Vecteur Bac",
+      "pageUrl": "https://www.vecteurbac.fr/la-wemba-mania/",
+      "title": "La Wemba-mania (sujet et corrigé)",
+      "kind": "exercise",
+      "level": "Terminale",
+      "subject": "Physique-chimie",
+      "year": 2026,
+      "session": "Jour 1",
+      "center": "Amérique du nord",
+      "exerciseNumber": 3,
+      "notions": [
+        {
+          "label": "Mouvement dans un champ de pesanteur uniforme",
+          "evidenceUrl": "https://www.vecteurbac.fr/la-wemba-mania/",
+          "evidence": "Mouvement dans un champ de pesanteur uniforme"
+        }
+      ],
+      "subjectUrl": "https://www.vecteurbac.fr/wp-content/uploads/2026/05/La-Wemba-mania.pdf",
+      "correctionUrl": "https://www.vecteurbac.fr/wp-content/uploads/2026/05/Correction-La-Wemba-mania.pdf",
+      "parentUrl": "https://www.vecteurbac.fr/terminale-specialite-physique-chimie-2026-amerique-du-nord-sujet-1",
+      "childUrls": [],
+      "embed": {
+        "allowed": false,
+        "permissionUrl": null,
+        "reason": "Autorisation d’intégration du sujet non établie ; accès sur le site source."
+      },
+      "indexedAt": "2026-10-16T12:05:54.768Z",
+      "verifiedAt": "2026-10-16T12:05:54.768Z",
+      "contentHash": "b11a165bbf02e0dd3ec9c71629cec1d8c7bde5be5ba29edb52478b7ff1f0c9ac",
+      "links": {
+        "page": "ok",
+        "subject": "ok",
+        "correction": "ok"
+      }
+    },
+    {
+      "id": "7bf4e37bb32fa35a",
+      "source": "Vecteur Bac",
+      "pageUrl": "https://www.vecteurbac.fr/leffet-photoelectrique-et-ses-applications/",
+      "title": "L’effet photoélectrique et ses applications (sujet et corrigé)",
+      "kind": "exercise",
+      "level": "Terminale",
+      "subject": "Physique-chimie",
+      "year": 2026,
+      "session": "Jour 1",
+      "center": "Amérique du nord",
+      "exerciseNumber": 2,
+      "notions": [
+        {
+          "label": "Effet photoélectrique",
+          "evidenceUrl": "https://www.vecteurbac.fr/leffet-photoelectrique-et-ses-applications/",
+          "evidence": "Effet photoélectrique"
+        }
+      ],
+      "subjectUrl": "https://www.vecteurbac.fr/wp-content/uploads/2026/05/Leffet-photoelectrique-et-ses-applications.pdf",
+      "correctionUrl": "https://www.vecteurbac.fr/wp-content/uploads/2026/05/Correction-Leffet-photoelectrique-et-ses-applications.pdf",
+      "parentUrl": "https://www.vecteurbac.fr/terminale-specialite-physique-chimie-2026-amerique-du-nord-sujet-1",
+      "childUrls": [],
+      "embed": {
+        "allowed": false,
+        "permissionUrl": null,
+        "reason": "Autorisation d’intégration du sujet non établie ; accès sur le site source."
+      },
+      "indexedAt": "2026-10-16T12:06:01.914Z",
+      "verifiedAt": "2026-10-16T12:06:01.914Z",
+      "contentHash": "c48c8897c947859b1836ca170bb548a56577e1fb27de68c432c969948b1667a0",
+      "links": {
+        "page": "ok",
+        "subject": "ok",
+        "correction": "ok"
+      }
+    },
+    {
+      "id": "5b74cf2d81c026f8",
+      "source": "Vecteur Bac",
+      "pageUrl": "https://www.vecteurbac.fr/etude-dune-harpe-electrique-au-service-des-abeilles-domestiques/",
+      "title": "Étude d’une harpe électrique au service des abeilles domestiques (sujet et corrigé)",
+      "kind": "exercise",
+      "level": "Terminale",
+      "subject": "Physique-chimie",
+      "year": 2026,
+      "session": "Jour 1",
+      "center": "Centres étrangers",
+      "exerciseNumber": 1,
+      "notions": [
+        {
+          "label": "Diffraction",
+          "evidenceUrl": "https://www.vecteurbac.fr/etude-dune-harpe-electrique-au-service-des-abeilles-domestiques/",
+          "evidence": "Diffraction"
+        },
+        {
+          "label": "Effet photoélectrique",
+          "evidenceUrl": "https://www.vecteurbac.fr/etude-dune-harpe-electrique-au-service-des-abeilles-domestiques/",
+          "evidence": "Effet photoélectrique"
+        },
+        {
+          "label": "Circuits RC",
+          "evidenceUrl": "https://www.vecteurbac.fr/etude-dune-harpe-electrique-au-service-des-abeilles-domestiques/",
+          "evidence": "Circuits RC"
+        }
+      ],
+      "subjectUrl": "https://www.vecteurbac.fr/wp-content/uploads/2026/06/Etude-dune-harpe-electrique-au-service-des-abeilles-domestiques.pdf",
+      "correctionUrl": "https://www.vecteurbac.fr/wp-content/uploads/2026/06/Correction-Etude-dune-harpe-electrique-au-service-des-abeilles-domestiques.pdf",
+      "parentUrl": "https://www.vecteurbac.fr/terminale-specialite-physique-chimie-2026-centres-etrangers-sujet-1/",
+      "childUrls": [],
+      "embed": {
+        "allowed": false,
+        "permissionUrl": null,
+        "reason": "Autorisation d’intégration du sujet non établie ; accès sur le site source."
+      },
+      "indexedAt": "2026-10-16T12:06:09.354Z",
+      "verifiedAt": "2026-10-16T12:06:09.354Z",
+      "contentHash": "88ae73dbf2976acf6b787c8a1f3b6a4942cd7b428cf7ef6d963727e50ad5fc06",
+      "links": {
+        "page": "ok",
+        "subject": "ok",
+        "correction": "ok"
+      }
+    },
+    {
+      "id": "a4d0ac1dd06b36d5",
+      "source": "Vecteur Bac",
+      "pageUrl": "https://www.vecteurbac.fr/etude-dun-lave-linge/",
+      "title": "Etude d’un lave-linge (sujet et corrigé)",
+      "kind": "exercise",
+      "level": "Terminale",
+      "subject": "Physique-chimie",
+      "year": 2026,
+      "session": "Jour 1",
+      "center": "Métropole",
+      "exerciseNumber": 1,
+      "notions": [
+        {
+          "label": "Fluides",
+          "evidenceUrl": "https://www.vecteurbac.fr/etude-dun-lave-linge/",
+          "evidence": "Fluides"
+        },
+        {
+          "label": "Circuits RC",
+          "evidenceUrl": "https://www.vecteurbac.fr/etude-dun-lave-linge/",
+          "evidence": "Circuits RC"
+        },
+        {
+          "label": "Thermodynamique",
+          "evidenceUrl": "https://www.vecteurbac.fr/etude-dun-lave-linge/",
+          "evidence": "Thermodynamique"
+        }
+      ],
+      "subjectUrl": "https://www.vecteurbac.fr/wp-content/uploads/2026/06/Etude-dun-lave-linge.pdf",
+      "correctionUrl": "https://www.vecteurbac.fr/wp-content/uploads/2026/06/Correction-Etude-dun-lave-linge.pdf",
+      "parentUrl": "https://www.vecteurbac.fr/terminale-specialite-physique-chimie-2026-metropole-sujet-1/",
+      "childUrls": [],
+      "embed": {
+        "allowed": false,
+        "permissionUrl": null,
+        "reason": "Autorisation d’intégration du sujet non établie ; accès sur le site source."
+      },
+      "indexedAt": "2026-10-16T12:06:17.883Z",
+      "verifiedAt": "2026-10-16T12:06:17.883Z",
+      "contentHash": "e700b5aed0c1d36d26b6b40666c745af1383856849b59a7dd64c4b6d944deba7",
+      "links": {
+        "page": "ok",
+        "subject": "ok",
+        "correction": "ok"
+      }
+    },
+    {
+      "id": "bd007e973f0cece1",
+      "source": "Vecteur Bac",
+      "pageUrl": "https://www.vecteurbac.fr/jeu-devasion/",
+      "title": "Jeu d’évasion (sujet et corrigé)",
+      "kind": "exercise",
+      "level": "Terminale",
+      "subject": "Physique-chimie",
+      "year": 2026,
+      "session": "Jour 2",
+      "center": "Asie",
+      "exerciseNumber": 1,
+      "notions": [
+        {
+          "label": "Mouvement dans un champ de pesanteur uniforme",
+          "evidenceUrl": "https://www.vecteurbac.fr/jeu-devasion/",
+          "evidence": "Mouvement dans un champ de pesanteur uniforme"
+        },
+        {
+          "label": "Circuits RC",
+          "evidenceUrl": "https://www.vecteurbac.fr/jeu-devasion/",
+          "evidence": "Circuits RC"
+        },
+        {
+          "label": "Interférences",
+          "evidenceUrl": "https://www.vecteurbac.fr/jeu-devasion/",
+          "evidence": "Interférences"
+        }
+      ],
+      "subjectUrl": "https://www.vecteurbac.fr/wp-content/uploads/2026/06/Jeu-devasion.pdf",
+      "correctionUrl": "https://www.vecteurbac.fr/wp-content/uploads/2026/06/Correction-Jeu-devasion.pdf",
+      "parentUrl": "https://www.vecteurbac.fr/terminale-specialite-physique-chimie-2026-asie-sujet-2/",
+      "childUrls": [],
+      "embed": {
+        "allowed": false,
+        "permissionUrl": null,
+        "reason": "Autorisation d’intégration du sujet non établie ; accès sur le site source."
+      },
+      "indexedAt": "2026-10-16T12:06:23.465Z",
+      "verifiedAt": "2026-10-16T12:06:23.465Z",
+      "contentHash": "a53fb48ea7b8201ac9d6313617c595e505f8441250781bc7a352214f65d33169",
+      "links": {
+        "page": "ok",
+        "subject": "ok",
+        "correction": "ok"
+      }
+    },
+    {
+      "id": "9a0c554835757965",
+      "source": "Vecteur Bac",
+      "pageUrl": "https://www.vecteurbac.fr/terminale-specialite-physique-chimie-2026-amerique-du-nord-sujet-1/",
+      "title": "Terminale spécialité physique chimie : 2026 Amérique du nord Sujet 1",
+      "kind": "paper",
+      "level": "Terminale",
+      "subject": "Physique-chimie",
+      "year": 2026,
+      "session": "Jour 1",
+      "center": "Amérique du nord",
+      "exerciseNumber": null,
+      "notions": [
+        {
+          "label": "Acide-base",
+          "evidenceUrl": "https://www.vecteurbac.fr/terminale-specialite-physique-chimie-2026-amerique-du-nord-sujet-1/",
+          "evidence": "Acide-Base"
+        },
+        {
+          "label": "Mécanisme réactionnel",
+          "evidenceUrl": "https://www.vecteurbac.fr/terminale-specialite-physique-chimie-2026-amerique-du-nord-sujet-1/",
+          "evidence": "Mécanisme réactionnel"
+        },
+        {
+          "label": "Titrage pH-métrique",
+          "evidenceUrl": "https://www.vecteurbac.fr/terminale-specialite-physique-chimie-2026-amerique-du-nord-sujet-1/",
+          "evidence": "Titrage pH-métrique"
+        },
+        {
+          "label": "Effet photoélectrique",
+          "evidenceUrl": "https://www.vecteurbac.fr/terminale-specialite-physique-chimie-2026-amerique-du-nord-sujet-1/",
+          "evidence": "Effet photoélectrique"
+        },
+        {
+          "label": "Mouvement dans un champ de pesanteur uniforme",
+          "evidenceUrl": "https://www.vecteurbac.fr/terminale-specialite-physique-chimie-2026-amerique-du-nord-sujet-1/",
+          "evidence": "Mouvement dans un champ de pesanteur uniforme"
+        }
+      ],
+      "subjectUrl": "https://www.vecteurbac.fr/wp-content/uploads/2026/05/Amerique-du-nord-2026-J1.pdf",
+      "correctionUrl": null,
+      "parentUrl": null,
+      "childUrls": [
+        "https://www.vecteurbac.fr/valorisation-du-dioxyde-de-carbone-dans-les-cimenteries/",
+        "https://www.vecteurbac.fr/leffet-photoelectrique-et-ses-applications/",
+        "https://www.vecteurbac.fr/la-wemba-mania/"
+      ],
+      "embed": {
+        "allowed": false,
+        "permissionUrl": null,
+        "reason": "Autorisation d’intégration du sujet non établie ; accès sur le site source."
+      },
+      "indexedAt": "2026-10-16T12:06:30.416Z",
+      "verifiedAt": "2026-10-16T12:06:30.416Z",
+      "contentHash": "a5a84c553b6f23940967d6f186a09a28a7f923dfa1fad19c978d7534e5a75677",
+      "links": {
+        "page": "ok",
+        "subject": "ok",
+        "correction": "absent"
+      }
+    },
+    {
+      "id": "9f5a7a1690dfbff3",
+      "source": "Vecteur Bac",
+      "pageUrl": "https://www.vecteurbac.fr/terminale-specialite-physique-chimie-2026-amerique-du-nord-sujet-2/",
+      "title": "Terminale spécialité physique chimie : 2026 Amérique du nord Sujet 2",
+      "kind": "paper",
+      "level": "Terminale",
+      "subject": "Physique-chimie",
+      "year": 2026,
+      "session": "Jour 2",
+      "center": "Amérique du nord",
+      "exerciseNumber": null,
+      "notions": [
+        {
+          "label": "Thermodynamique",
+          "evidenceUrl": "https://www.vecteurbac.fr/terminale-specialite-physique-chimie-2026-amerique-du-nord-sujet-2/",
+          "evidence": "Thermodynamique"
+        },
+        {
+          "label": "Électrolyse",
+          "evidenceUrl": "https://www.vecteurbac.fr/terminale-specialite-physique-chimie-2026-amerique-du-nord-sujet-2/",
+          "evidence": "Électrolyse"
+        },
+        {
+          "label": "Acide-base",
+          "evidenceUrl": "https://www.vecteurbac.fr/terminale-specialite-physique-chimie-2026-amerique-du-nord-sujet-2/",
+          "evidence": "Acide-Base"
+        },
+        {
+          "label": "Titrage",
+          "evidenceUrl": "https://www.vecteurbac.fr/terminale-specialite-physique-chimie-2026-amerique-du-nord-sujet-2/",
+          "evidence": "Titrage"
+        }
+      ],
+      "subjectUrl": "https://www.vecteurbac.fr/wp-content/uploads/2026/05/Amerique-du-nord-2026-J2.pdf",
+      "correctionUrl": null,
+      "parentUrl": null,
+      "childUrls": [
+        "https://www.vecteurbac.fr/jai-froid-aux-pieds-sur-le-carrelage-je-prefere-le-parquet/",
+        "https://www.vecteurbac.fr/hope-lespoir-du-dihydrogene-vert/",
+        "https://www.vecteurbac.fr/la-lessive-de-cendre/"
+      ],
+      "embed": {
+        "allowed": false,
+        "permissionUrl": null,
+        "reason": "Autorisation d’intégration du sujet non établie ; accès sur le site source."
+      },
+      "indexedAt": "2026-10-16T12:06:36.249Z",
+      "verifiedAt": "2026-10-16T12:06:36.249Z",
+      "contentHash": "3f287743d4c24466503ac545c76848be5641987a8875d9a0baa66a65a9fdc911",
+      "links": {
+        "page": "ok",
+        "subject": "ok",
+        "correction": "absent"
+      }
+    },
+    {
+      "id": "d437adb278673f7b",
+      "source": "Vecteur Bac",
+      "pageUrl": "https://www.vecteurbac.fr/competition-de-saut-dobstacles-en-hobby-horse/",
+      "title": "Compétition de saut d’obstacles en Hobby Horse (sujet et corrigé)",
+      "kind": "exercise",
+      "level": "Terminale",
+      "subject": "Physique-chimie",
+      "year": 2025,
+      "session": "septembre",
+      "center": "Asie",
+      "exerciseNumber": 1,
+      "notions": [
+        {
+          "label": "Effet Doppler",
+          "evidenceUrl": "https://www.vecteurbac.fr/competition-de-saut-dobstacles-en-hobby-horse/",
+          "evidence": "Doppler"
+        },
+        {
+          "label": "Diffraction",
+          "evidenceUrl": "https://www.vecteurbac.fr/competition-de-saut-dobstacles-en-hobby-horse/",
+          "evidence": "Diffraction"
+        },
+        {
+          "label": "Mouvement dans un champ de pesanteur uniforme",
+          "evidenceUrl": "https://www.vecteurbac.fr/competition-de-saut-dobstacles-en-hobby-horse/",
+          "evidence": "Mouvement dans un champ de pesanteur uniforme"
+        }
+      ],
+      "subjectUrl": "https://www.vecteurbac.fr/wp-content/uploads/2025/11/Competition-de-saut-dobstacles-en-Hobby-Horse.pdf",
+      "correctionUrl": "https://www.vecteurbac.fr/wp-content/uploads/2026/06/Correction-Competition-de-saut-dobstacles-en-Hobby-Horse.pdf",
+      "parentUrl": "https://www.vecteurbac.fr/terminale-specialite-physique-chimie-septembre-2025-asie/",
+      "childUrls": [],
+      "embed": {
+        "allowed": false,
+        "permissionUrl": null,
+        "reason": "Autorisation d’intégration du sujet non établie ; accès sur le site source."
+      },
+      "indexedAt": "2026-10-16T12:11:28.440Z",
+      "verifiedAt": "2026-10-16T12:11:28.440Z",
+      "contentHash": "77bd02f8ef8c89d4be747317c77d9d61db18a6eacb781995755ae86edd7c17d1",
+      "links": {
+        "page": "ok",
+        "subject": "ok",
+        "correction": "ok"
+      }
+    }
+  ]
+}
