@@ -25,7 +25,7 @@ pnpm test:e2e
 
 ## Mettre le site sur GitHub Pages
 
-Un **dépôt** est un dossier de projet sur GitHub. Le projet local est prêt, mais aucun dépôt distant ni site public n’a été créé depuis cette session.
+Le site est publié : **https://delightedadam.github.io/annales/**. Le dépôt est [delightedadam/annales](https://github.com/delightedadam/annales). Publication et recherche vérifiées le 16 octobre 2026. Les instructions suivantes permettent de reproduire la configuration.
 
 1. Se connecter à [github.com/delightedadam](https://github.com/delightedadam), puis cliquer **+ → New repository**.
 2. Nommer le dépôt **annales**, choisir **Public**, ne pas ajouter de README ou de `.gitignore`, puis **Create repository**.
@@ -42,7 +42,7 @@ Un **dépôt** est un dossier de projet sur GitHub. Le projet local est prêt, m
 
 4. Dans le dépôt GitHub, ouvrir **Settings → Pages → Build and deployment → Source**, puis choisir **GitHub Actions**.
 5. Ouvrir **Actions → Test and deploy GitHub Pages**. Si le premier lancement a échoué avant l’activation de Pages, cliquer **Re-run all jobs** ou **Run workflow**.
-6. Attendre la réussite des étapes de tests, compilation, publication et contrôle de l’URL. L’adresse prévue est `https://delightedadam.github.io/annales/`. **Cette adresse n’a pas été vérifiée publiquement à ce stade.**
+6. Attendre la réussite des étapes de tests, compilation, publication et contrôle de l’URL. L’adresse est `https://delightedadam.github.io/annales/`.
 7. Ouvrir le lien fourni par le workflow, rechercher « Doppler », tester un corrigé, puis recharger l’URL d’une recherche partagée.
 
 Chaque push sur `main` relance les tests et publie si tout réussit. Les pull requests sont testées mais ne sont pas déployées. Le workflow vérifie aussi l’URL publique et le chargement de son catalogue après publication.
@@ -99,4 +99,4 @@ Pour ajouter un backend, implémenter `SearchProvider.search(Query)` avec un app
 - Aucun sujet n’a d’autorisation d’intégration établie : seuls les liens externes sont proposés. Le lecteur conditionnel est prêt, mais sa compatibilité avec un PDF distant autorisé devra être vérifiée avant activation. Les contrôles de page/zoom reposent sur le lecteur PDF du navigateur ; le lien externe reste disponible.
 - Les 1 079 pages de métadonnées ont été consultées. Les 1 023 liens PDF sont repris des sources, sans téléchargement ; seuls les liens de la sélection initiale ont reçu un contrôle HEAD séparé. Le statut non retesté est indiqué. 56 fiches sans PDF direct proposent une action distincte « Consulter la fiche ».
 - La déduplication des exercices exige titre, année, centre, session et numéro concordants. Celle des sujets complets exige référence officielle, année, centre et session concordants. Les cas incertains restent séparés.
-- La publication réelle dépend de la création du dépôt et de l’activation de Pages. Voir [les validations](docs/VALIDATION.md) pour distinguer tests locaux et exécution GitHub.
+- La publication GitHub Pages a été exécutée avec succès. Voir [les validations](docs/VALIDATION.md) pour les preuves et limites.

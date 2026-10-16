@@ -16,13 +16,13 @@
 
 Le test du lecteur utilise uniquement une fixture navigateur explicitement autorisée pour le test, avec réponse simulée 403 afin de vérifier le repli externe. Cela ne constitue pas une preuve d’autorisation ou de compatibilité d’un document distant réel. Le catalogue de production garde `embed.allowed=false` pour toutes les références.
 
-## Non exécuté : dépend de GitHub
+## Exécuté sur GitHub et vérifié publiquement
 
-- Création du dépôt distant, push et activation de GitHub Pages.
-- Exécution réelle du workflow sur les runners GitHub, émission du jeton OIDC et publication de l’artefact.
-- Vérification d’une URL publique effectivement déployée.
+- Dépôt public créé : https://github.com/delightedadam/annales ; push sur main et source Pages réglée sur GitHub Actions.
+- [Workflow initial réussi](https://github.com/delightedadam/annales/actions/runs/38939062871) pour le commit a30a9e8 : installation verrouillée, contrôles, tests unitaires, compilation de production, tests Chromium et publication. Durée totale : 1 min 6 s.
+- Le workflow a vérifié l’URL publique et son catalogue JSON. Une ouverture indépendante dans Edge de https://delightedadam.github.io/annales/ a confirmé le chargement de 918 résultats. La recherche « Titrage pH-métrique et acide-base » en mode ET renvoie 68 résultats.
 
-Le workflow inclut ces contrôles de publication, mais **une validation locale de workflow n’équivaut pas à un déploiement réussi**. Le projet n’est pas déclaré publié. L’étape de publication reste à effectuer en suivant le README.
+Le site est publié et ne dépend pas du serveur local. GitHub signale des avertissements de dépréciation des runtimes Node 20 des actions, exécutées automatiquement avec Node 24 ; ils n’ont pas empêché la réussite. La collecte périodique demeure verrouillée en attente d’autorisations documentées des sources.
 
 ## Limites de couverture des tests
 
