@@ -187,4 +187,8 @@ export function chapterMatchQuality(label:string,notions:string[]):'direct'|'rel
  return c?.related.map(canonical).some(n=>available.includes(n))?'related':null;
 }
 export function chapterMatches(chapter:string,notions:string[]){return chapterMatchQuality(chapter,notions)!==null}
-export function listChapters(_notions:string[]=[]){return chapters.map(c=>c.title)}
+export function listChapters(notions:string[]=[],level='Terminale'){
+ if(level!=='Première')return chapters.map(c=>c.title);
+ const labels=[...new Set(notions.map(canonical))],grouped=new Set(Object.values(legacyGroups).flat().map(canonical));
+ return [...Object.keys(legacyGroups).filter(c=>chapterMatches(c,labels)),...labels.filter(n=>!grouped.has(n))].sort((a,b)=>a.localeCompare(b,'fr'));
+}

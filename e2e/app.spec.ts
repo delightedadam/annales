@@ -18,7 +18,7 @@ test('recherche, partage, navigation et sources',async({page})=>{
  expect(errors).toEqual([]);
 });
 test('clavier et filtres',async({page})=>{
- await page.goto('./');await page.keyboard.press('Tab');await expect(page.getByText('Aller à la recherche')).toBeFocused();
+ await page.goto('./');await expect(page.getByRole('heading',{name:'Qu’allez-vous réviser ?'})).toBeVisible();await page.keyboard.press('Tab');await expect(page.getByText('Aller à la recherche')).toBeFocused();
  await page.getByLabel('Rechercher des notions ou un titre').focus();await page.keyboard.type('Doppler');await page.keyboard.press('Enter');await expect(page.locator('article').first()).toContainText('Doppler');
  await page.getByText('Filtres Année, source, corrigé').click();await page.getByLabel('Année',{exact:true}).selectOption('2025');await expect(page.locator('article').first()).toContainText('2025');
 });
