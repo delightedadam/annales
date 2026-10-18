@@ -13,7 +13,8 @@
     "check:workflows": "tsx scripts/check-workflows.ts",
     "test:e2e": "playwright test",
     "collect:all": "tsx scripts/collect-all.ts",
-    "predev": "tsx scripts/prepare-ocr.ts"
+    "predev": "tsx scripts/prepare-ocr.ts",
+    "collect:premiere": "tsx scripts/collect-premiere.ts"
   },
   "dependencies": {
     "minisearch": "^7.1.2",

@@ -18,7 +18,7 @@ function absolute(path:string|undefined,url:string){if(!path)return null;const v
 function evidence(labels:string[],pageUrl:string){const byConcept=new Map<string,string>();for(const label of labels.map(clean).filter(Boolean)){if(!byConcept.has(canonical(label)))byConcept.set(canonical(label),label);}return [...byConcept].map(([label,evidence])=>({label,evidenceUrl:pageUrl,evidence}));}
 export function parseLabolycee($:Dom,pageUrl:string,html:string):Resource {
  const origin=clean($('.fiche-origine').first().text());
- if(!/Terminale Spécialité Physique Chimie/i.test(origin))throw new Error(origin?'Hors périmètre : '+origin:'Cursus absent');
+ if(!/Terminale Spécialité Physique Chimie|1ère EC Spécialité Physique Chimie/i.test(origin))throw new Error(origin?'Hors périmètre : '+origin:'Cursus absent');
  const labels=$('.fiche-navigation .badge-thema').map((_,e)=>clean($(e).text())).get();
  const notes=clean($('.notes-pedago').first().text());
  // Only explicit phrases in this exercise's notes, never related cards or PDF text.
@@ -26,7 +26,7 @@ export function parseLabolycee($:Dom,pageUrl:string,html:string):Resource {
  const pdfUrl=absolute($('.onglet[data-url]').first().attr('data-url'),pageUrl);
  const subjectUrl=pdfUrl??pageUrl;
  const correctionUrl=absolute($('.onglet-corrige').first().attr('data-url'),pageUrl);
- return resourceSchema.parse({...base(pageUrl,html),source:'Labolycée',title:clean($('h1').first().text()),kind:'exercise',year:Number(origin.match(/\b(20\d{2})\b/)?.[1])||null,center:origin.split('·')[1]?.replace(/20\d{2}/,'').trim()||null,session:origin.match(/Jour\s+\d+|Session de remplacement/i)?.[0]||null,exerciseNumber:Number(origin.match(/Exercice n°\s*(\d+)/i)?.[1])||null,notions:evidence(labels,pageUrl),subjectUrl,subjectFormat:pdfUrl?'pdf':'source-page',correctionUrl,parentUrl:absolute($('a[href^="/sujets/"]').first().attr('href'),pageUrl),childUrls:[],links:{page:'ok',subject:pdfUrl?'unchecked':'ok',correction:correctionUrl?'unchecked':'absent'}});
+ return resourceSchema.parse({...base(pageUrl,html),level:origin.startsWith('1ère')?'Première':'Terminale',source:'Labolycée',title:clean($('h1').first().text()),kind:'exercise',year:Number(origin.match(/\b(20\d{2})\b/)?.[1])||null,center:origin.split('·')[1]?.replace(/20\d{2}/,'').trim()||null,session:origin.match(/Jour\s+\d+|Session de remplacement/i)?.[0]||null,exerciseNumber:Number(origin.match(/Exercice n°\s*(\d+)/i)?.[1])||null,notions:evidence(labels,pageUrl),subjectUrl,subjectFormat:pdfUrl?'pdf':'source-page',correctionUrl,parentUrl:absolute($('a[href^="/sujets/"]').first().attr('href'),pageUrl),childUrls:[],links:{page:'ok',subject:pdfUrl?'unchecked':'ok',correction:correctionUrl?'unchecked':'absent'}});
 }
 export function parseVecteur($:Dom,pageUrl:string,html:string,context?:PageContext):Resource {
  const body=$('.entry-content'),title=clean($('.entry-title').first().text());

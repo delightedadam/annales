@@ -1,0 +1,50 @@
+{
+  "startedAt": "2026-10-16T23:22:44.818Z",
+  "finishedAt": "2026-10-16T23:28:11.487Z",
+  "sources": {
+    "Labolycée": {
+      "listingPages": [
+        "https://www.labolycee.org/exercices?cursus=1%C3%A8re+EC+Sp%C3%A9cialit%C3%A9+Physique+Chimie",
+        "https://www.labolycee.org/exercices?cursus=1%C3%A8re+EC+Sp%C3%A9cialit%C3%A9+Physique+Chimie&page=2",
+        "https://www.labolycee.org/exercices?cursus=1%C3%A8re+EC+Sp%C3%A9cialit%C3%A9+Physique+Chimie&page=4",
+        "https://www.labolycee.org/exercices?cursus=1%C3%A8re+EC+Sp%C3%A9cialit%C3%A9+Physique+Chimie&page=3"
+      ],
+      "discovered": 77,
+      "expected": 77,
+      "indexed": 77
+    },
+    "Vecteur Bac": {
+      "listingPages": [
+        "https://www.vecteurbac.fr/1ere-e3c-liste-des-sujets/",
+        "https://www.vecteurbac.fr/1ere-e3c/",
+        "https://www.vecteurbac.fr/index.php/1ere-e3c-chimie-combustions/",
+        "https://www.vecteurbac.fr/index.php/1ere-e3c-chimie-loi-de-beer-lambert/",
+        "https://www.vecteurbac.fr/index.php/1ere-e3c-chimie-oxydoreduction/",
+        "https://www.vecteurbac.fr/index.php/1ere-e3c-chimie-polarite/",
+        "https://www.vecteurbac.fr/index.php/1ere-e3c-chimie-python/",
+        "https://www.vecteurbac.fr/index.php/1ere-e3c-chimie-quantite-de-matiere/",
+        "https://www.vecteurbac.fr/index.php/1ere-e3c-chimie-spectroscopie-ir/",
+        "https://www.vecteurbac.fr/index.php/1ere-e3c-chimie-structure-des-entites-organiques/",
+        "https://www.vecteurbac.fr/index.php/1ere-e3c-chimie-synthese-organique/",
+        "https://www.vecteurbac.fr/index.php/1ere-e3c-chimie-tableau-davancement/",
+        "https://www.vecteurbac.fr/index.php/1ere-e3c-chimie-titrage/",
+        "https://www.vecteurbac.fr/index.php/1ere-e3c-chimie-sujets-sans-calculatrice/",
+        "https://www.vecteurbac.fr/index.php/1ere-e3c-physique-electricite/",
+        "https://www.vecteurbac.fr/index.php/1ere-e3c-physique-energie-mecanique/",
+        "https://www.vecteurbac.fr/index.php/1ere-e3c-physique-fluide/",
+        "https://www.vecteurbac.fr/index.php/1ere-e3c-physique-images-et-couleurs/",
+        "https://www.vecteurbac.fr/index.php/1ere-e3c-physique-interactions-fondamentales/",
+        "https://www.vecteurbac.fr/index.php/1ere-e3c-physique-ondes-mecaniques/",
+        "https://www.vecteurbac.fr/index.php/1ere-e3c-physique-photon-interaction-lumiere-matiere/",
+        "https://www.vecteurbac.fr/index.php/1ere-e3c-physique-python/",
+        "https://www.vecteurbac.fr/index.php/1ere-e3c-physique-theoreme-de-lenergie-cinetique/",
+        "https://www.vecteurbac.fr/index.php/1ere-e3c-physique-vecteur-variation-de-vitesse/",
+        "https://www.vecteurbac.fr/index.php/1ere-e3c-physique-sujets-sans-calculatrice/"
+      ],
+      "discovered": 106,
+      "papers": 151,
+      "indexed": 106
+    }
+  },
+  "errors": []
+}

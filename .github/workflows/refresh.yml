@@ -19,6 +19,7 @@ jobs:
           node-version: 24
       - run: pnpm install --frozen-lockfile
       - run: pnpm collect:all --periodic
+      - run: pnpm collect:premiere --periodic
       - run: pnpm test && pnpm build
       - name: Save reviewed metadata candidate
         if: always()
@@ -29,5 +30,7 @@ jobs:
             data/catalogue.json
             data/collection-report.json
             data/coverage.json
+            data/premiere.json
+            data/premiere-coverage.json
             data/discovered-*.json
           retention-days: 30

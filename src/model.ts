@@ -4,7 +4,7 @@ export function safeUrl(s:string) { try { const u=new URL(s); return u.protocol=
 const url=z.string().refine(safeUrl,'URL source non autorisée');
 export const resourceSchema=z.object({
  id:z.string(),source:z.enum(['Labolycée','Vecteur Bac']),pageUrl:url,title:z.string().min(1),kind:z.enum(['exercise','paper']),examCode:z.string().nullable().default(null),
- level:z.literal('Terminale'),subject:z.literal('Physique-chimie'),year:z.number().int().min(1900).max(2100).nullable(),session:z.string().nullable(),center:z.string().nullable(),exerciseNumber:z.number().int().positive().nullable(),
+ level:z.enum(['Terminale','Première']),subject:z.literal('Physique-chimie'),year:z.number().int().min(1900).max(2100).nullable(),session:z.string().nullable(),center:z.string().nullable(),exerciseNumber:z.number().int().positive().nullable(),
  notions:z.array(z.object({label:z.string(),evidenceUrl:url,evidence:z.string().min(1)})),
  subjectUrl:url,subjectFormat:z.enum(['pdf','source-page']).default('pdf'),correctionUrl:url.nullable(),parentUrl:url.nullable(),childUrls:z.array(url),
  embed:z.object({allowed:z.boolean(),permissionUrl:url.nullable(),reason:z.string()}),
