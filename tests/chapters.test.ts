@@ -13,4 +13,4 @@ describe('multiple chapters',()=>{
 
 it('marks broad source tags as uncertain rather than confirmed subchapters',()=>{expect(chapterMatchQuality('Modèle du gaz parfait',['Thermodynamique'])).toBe('related');expect(chapterMatchQuality('Deuxième loi de Newton',['Satellites, lois de Kepler'])).toBeNull();const result=engine.searchSync({...defaults,chapters:['Modèle du gaz parfait']});expect(result.total).toBeGreaterThan(0);expect(result.hits.every(h=>h.label.includes('à vérifier'))).toBe(true)});
 
-it('keeps Premiere separate from the numbered Terminale course',()=>{expect(listChapters(['Oxydoréduction','Titrage'],'Première')).toEqual(['Oxydoréduction','Titrages']);expect(listChapters([],'Terminale')).toHaveLength(19)});
+it('keeps Premiere separate from the numbered Terminale course',()=>{expect(listChapters([],'Première')).toHaveLength(18);expect(listChapters([],'Première')[0]).toBe('Première : Quantité de matière et concentrations');expect(listChapters([],'Terminale')).toHaveLength(19)});

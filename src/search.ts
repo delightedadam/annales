@@ -37,7 +37,7 @@ export class LocalSearchProvider implements SearchProvider {
    const primary=available[0];
    if(q.kind!=='all'&&primary.kind!==q.kind||q.year!=='all'&&String(primary.year)!==q.year||q.corrected&&!available.some(r=>r.correctionUrl&&r.links.correction!=='missing'))continue;
    const visibleNotions=[...new Set(available.flatMap(r=>r.notions.map(n=>canonical(n.label))))];
-   const chapterQualities=(q.chapters??[]).map(c=>chapterMatchQuality(c,visibleNotions));
+   const chapterQualities=(q.chapters??[]).map(c=>c.startsWith('Première : ')&&primary.level!=='Première'?null:chapterMatchQuality(c,visibleNotions));
    const chapterChecks=chapterQualities.map(Boolean);
    const matched=concepts.filter(n=>visibleNotions.includes(n));
    // The text index is a candidate generator; source-scoped matching cannot borrow metadata from a hidden source.

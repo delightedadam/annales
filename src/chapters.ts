@@ -180,15 +180,146 @@ export const chapters: {title:string;direct:string[];related:string[]}[] = [
   }
 ];
 
-export function chapterMembers(label:string){const c=chapters.find(c=>c.title===label);return (c?[...c.direct,...c.related]:legacyGroups[label]??[label]).map(canonical)}
+// Numbering is a navigation aid, not an imposed teaching sequence.
+export const premiereChapters = [
+  {
+    "title": "Première : Quantité de matière et concentrations",
+    "direct": [
+      "Quantité de matière"
+    ],
+    "related": []
+  },
+  {
+    "title": "Première : Absorbance et dosage par étalonnage",
+    "direct": [
+      "Loi de Beer-Lambert",
+      "Beer-Lambert"
+    ],
+    "related": []
+  },
+  {
+    "title": "Première : Réactions d’oxydoréduction",
+    "direct": [
+      "Oxydoréduction"
+    ],
+    "related": []
+  },
+  {
+    "title": "Première : Avancement et bilan de matière",
+    "direct": [
+      "Tableau d’avancement"
+    ],
+    "related": []
+  },
+  {
+    "title": "Première : Titrages colorimétriques",
+    "direct": [
+      "Titrage"
+    ],
+    "related": []
+  },
+  {
+    "title": "Première : Structure et polarité des entités chimiques",
+    "direct": [
+      "Polarité"
+    ],
+    "related": []
+  },
+  {
+    "title": "Première : Cohésion, solubilité et extraction",
+    "direct": [
+      "Solubilité"
+    ],
+    "related": []
+  },
+  {
+    "title": "Première : Structure des molécules organiques et spectroscopie IR",
+    "direct": [
+      "Structure des entités organiques",
+      "Spectroscopie IR"
+    ],
+    "related": []
+  },
+  {
+    "title": "Première : Synthèse en chimie organique",
+    "direct": [
+      "Synthèse organique"
+    ],
+    "related": []
+  },
+  {
+    "title": "Première : Combustions et énergie chimique",
+    "direct": [
+      "Combustions"
+    ],
+    "related": []
+  },
+  {
+    "title": "Première : Interactions, forces et champs",
+    "direct": [
+      "Interactions fondamentales"
+    ],
+    "related": []
+  },
+  {
+    "title": "Première : Statique des fluides",
+    "direct": [
+      "Fluides"
+    ],
+    "related": []
+  },
+  {
+    "title": "Première : Mouvement et variation du vecteur vitesse",
+    "direct": [
+      "Vecteur variation de vitesse"
+    ],
+    "related": []
+  },
+  {
+    "title": "Première : Énergie électrique",
+    "direct": [
+      "Électricité"
+    ],
+    "related": []
+  },
+  {
+    "title": "Première : Travail, énergie cinétique et énergie mécanique",
+    "direct": [
+      "Théorème de l’énergie cinétique",
+      "Énergie mécanique"
+    ],
+    "related": []
+  },
+  {
+    "title": "Première : Ondes mécaniques",
+    "direct": [
+      "Ondes mécaniques"
+    ],
+    "related": []
+  },
+  {
+    "title": "Première : Lentilles, images et couleurs",
+    "direct": [
+      "Images et couleurs"
+    ],
+    "related": []
+  },
+  {
+    "title": "Première : Lumière, photons et interaction lumière-matière",
+    "direct": [
+      "Photon",
+      "Photon – interaction lumière-matière"
+    ],
+    "related": []
+  }
+];
+export function chapterMembers(label:string){const c=[...chapters,...premiereChapters].find(c=>c.title===label);return (c?[...c.direct,...c.related]:legacyGroups[label]??[label]).map(canonical)}
 export function chapterMatchQuality(label:string,notions:string[]):'direct'|'related'|null{
- const available=notions.map(canonical),c=chapters.find(c=>c.title===label);
+ const available=notions.map(canonical),c=[...chapters,...premiereChapters].find(c=>c.title===label);
  if((c?.direct??legacyGroups[label]??[label]).map(canonical).some(n=>available.includes(n)))return 'direct';
  return c?.related.map(canonical).some(n=>available.includes(n))?'related':null;
 }
 export function chapterMatches(chapter:string,notions:string[]){return chapterMatchQuality(chapter,notions)!==null}
-export function listChapters(notions:string[]=[],level='Terminale'){
- if(level!=='Première')return chapters.map(c=>c.title);
- const labels=[...new Set(notions.map(canonical))],grouped=new Set(Object.values(legacyGroups).flat().map(canonical));
- return [...Object.keys(legacyGroups).filter(c=>chapterMatches(c,labels)),...labels.filter(n=>!grouped.has(n))].sort((a,b)=>a.localeCompare(b,'fr'));
+export function listChapters(_notions:string[]=[],level='Terminale'){
+ return (level==='Première'?premiereChapters:chapters).map(c=>c.title);
 }
