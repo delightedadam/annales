@@ -180,8 +180,7 @@ export const chapters: {title:string;direct:string[];related:string[]}[] = [
   }
 ];
 
-// Numbering is a navigation aid, not an imposed teaching sequence.
-export const premiereChapters = [
+const previousPremiereChapters = [
   {
     "title": "Première : Quantité de matière et concentrations",
     "direct": [
@@ -313,9 +312,125 @@ export const premiereChapters = [
     "related": []
   }
 ];
-export function chapterMembers(label:string){const c=[...chapters,...premiereChapters].find(c=>c.title===label);return (c?[...c.direct,...c.related]:legacyGroups[label]??[label]).map(canonical)}
+
+// Course titles and order supplied by the user.
+export const premiereChapters = [
+  {
+    "title": "Première : Composition d'un système chimique",
+    "direct": [
+      "Quantité de matière",
+      "Loi de Beer-Lambert",
+      "Beer-Lambert"
+    ],
+    "related": []
+  },
+  {
+    "title": "Première : Modélisation d'une transformation",
+    "direct": [
+      "Oxydoréduction",
+      "Tableau d’avancement",
+      "Titrage"
+    ],
+    "related": []
+  },
+  {
+    "title": "Première : Ondes mécaniques",
+    "direct": [
+      "Ondes mécaniques"
+    ],
+    "related": []
+  },
+  {
+    "title": "Première : Images et couleurs",
+    "direct": [
+      "Images et couleurs"
+    ],
+    "related": []
+  },
+  {
+    "title": "Première : Modèle ondulatoire et particulaire de la lumière",
+    "direct": [
+      "Photon",
+      "Photon – interaction lumière-matière"
+    ],
+    "related": []
+  },
+  {
+    "title": "Première : Structure des entités",
+    "direct": [
+      "Polarité"
+    ],
+    "related": []
+  },
+  {
+    "title": "Première : De la cohésion à la solubilité d'espèces chimiques",
+    "direct": [
+      "Solubilité"
+    ],
+    "related": []
+  },
+  {
+    "title": "Première : Interactions fondamentales et notion de champ",
+    "direct": [
+      "Interactions fondamentales"
+    ],
+    "related": []
+  },
+  {
+    "title": "Première : Mouvement d'un système",
+    "direct": [
+      "Vecteur variation de vitesse"
+    ],
+    "related": []
+  },
+  {
+    "title": "Première : Aspects énergétiques des systèmes mécaniques",
+    "direct": [
+      "Énergie mécanique",
+      "Théorème de l’énergie cinétique"
+    ],
+    "related": []
+  },
+  {
+    "title": "Première : Structure des composés organiques",
+    "direct": [
+      "Structure des entités organiques",
+      "Spectroscopie IR"
+    ],
+    "related": []
+  },
+  {
+    "title": "Première : Synthèse organique",
+    "direct": [
+      "Synthèse organique"
+    ],
+    "related": []
+  },
+  {
+    "title": "Première : Énergie stockée dans la matière organique",
+    "direct": [
+      "Combustions"
+    ],
+    "related": []
+  },
+  {
+    "title": "Première : Aspects énergétiques des systèmes électriques",
+    "direct": [
+      "Électricité"
+    ],
+    "related": []
+  },
+  {
+    "title": "Première : Fluide au repos",
+    "direct": [
+      "Fluides"
+    ],
+    "related": []
+  }
+];
+export function chapterMembers(label:string){const c=[...chapters,...premiereChapters,...previousPremiereChapters].find(c=>c.title===label);return (c?[...c.direct,...c.related]:legacyGroups[label]??[label]).map(canonical)}
 export function chapterMatchQuality(label:string,notions:string[]):'direct'|'related'|null{
- const available=notions.map(canonical),c=[...chapters,...premiereChapters].find(c=>c.title===label);
+ const available=notions.map(canonical),c=[...chapters,...premiereChapters,...previousPremiereChapters].find(c=>c.title===label);
  if((c?.direct??legacyGroups[label]??[label]).map(canonical).some(n=>available.includes(n)))return 'direct';
  return c?.related.map(canonical).some(n=>available.includes(n))?'related':null;
 }

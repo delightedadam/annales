@@ -21,7 +21,7 @@ test('select several chapters, combine and share',async({page})=>{
 test('separate numbered programmes preserve course order',async({page})=>{
  await page.goto('./');await page.getByText('Choisir des chapitres',{exact:false}).click();
  const labels=page.locator('.chapter-picker strong');await expect(labels.first()).toContainText('Chapitre 1 — Transformations acide-base');await expect(labels.nth(1)).toContainText('Chapitre 2 — Description');
- await page.getByRole('button',{name:'Programme de Première',exact:true}).click();await expect(page.getByLabel('Niveau',{exact:true})).toHaveValue('Première');await expect(labels).toHaveCount(18);await expect(labels.first()).toHaveText('Chapitre 1 — Quantité de matière et concentrations');
- await page.getByRole('checkbox',{name:/Chapitre 3 — Réactions/}).check();await expect(page.locator('article').first()).toContainText('Première');await expect(page.locator('article').first()).toContainText('Oxydoréduction');
+ await page.getByRole('button',{name:'Programme de Première',exact:true}).click();await expect(page.getByLabel('Niveau',{exact:true})).toHaveValue('Première');await expect(labels).toHaveCount(15);await expect(labels.first()).toHaveText('Chapitre 1 — Composition d\'un système chimique');
+ await page.getByRole('checkbox',{name:/Chapitre 2 — Modélisation/}).check();await expect(page.locator('article').first()).toContainText('Première');await expect(page.locator('article').first()).toContainText('Oxydoréduction');
  await page.getByRole('button',{name:'Programme de Terminale',exact:true}).click();await expect(labels).toHaveCount(19);await expect(page.locator('.chapter-picker input:checked')).toHaveCount(0);
 });
