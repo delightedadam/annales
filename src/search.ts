@@ -1,4 +1,4 @@
-import {chapterMatches} from './chapters';
+import {chapterMatchQuality} from './chapters';
 import MiniSearch from 'minisearch';
 import {normalize,type Resource} from './model';
 import {aliases,canonical,parseQuery} from './notions';
@@ -37,7 +37,8 @@ export class LocalSearchProvider implements SearchProvider {
    const primary=available[0];
    if(q.kind!=='all'&&primary.kind!==q.kind||q.year!=='all'&&String(primary.year)!==q.year||q.corrected&&!available.some(r=>r.correctionUrl&&r.links.correction!=='missing'))continue;
    const visibleNotions=[...new Set(available.flatMap(r=>r.notions.map(n=>canonical(n.label))))];
-   const chapterChecks=(q.chapters??[]).map(c=>chapterMatches(c,visibleNotions));
+   const chapterQualities=(q.chapters??[]).map(c=>chapterMatchQuality(c,visibleNotions));
+   const chapterChecks=chapterQualities.map(Boolean);
    const matched=concepts.filter(n=>visibleNotions.includes(n));
    // The text index is a candidate generator; source-scoped matching cannot borrow metadata from a hidden source.
    const sourceText=parsed.terms.length&&q.source!=='all'?normalize([primary.title,...visibleNotions.flatMap(aliases)].join(' ')):'';
@@ -46,7 +47,7 @@ export class LocalSearchProvider implements SearchProvider {
    if(conditions.length&&!(q.mode==='AND'?conditions.every(Boolean):conditions.some(Boolean)))continue;
    const exact=matched.length===concepts.length&&concepts.length>0&&parsed.terms.length===0;
    const synonym=exact&&parsed.concepts.some(n=>!parsed.exact.includes(n));
-   const label=chapterChecks.length?(chapterChecks.every(Boolean)?'Chapitres sélectionnés présents':'Certains chapitres présents'):!conditions.length?'Catalogue vérifié':exact?(synonym?'Synonyme vérifié':'Notions exactes'):matched.length?'Correspondance partielle':'Correspondance textuelle · à vérifier';
+   const label=chapterChecks.length?(chapterQualities.includes('related')?'Chapitres proches · à vérifier':chapterChecks.every(Boolean)?'Chapitres sélectionnés présents':'Certains chapitres présents'):!conditions.length?'Catalogue vérifié':exact?(synonym?'Synonyme vérifié':'Notions exactes'):matched.length?'Correspondance partielle':'Correspondance textuelle · à vérifier';
    const score=chapterChecks.filter(Boolean).length*100+matched.length*100+tokenResults.reduce((s,m)=>s+(m.get(group.id)||0),0);
    hits.push({group:{...group,primary,variants:available,notions:visibleNotions},score,label,matched});
   }
